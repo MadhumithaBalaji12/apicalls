@@ -1,0 +1,87 @@
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="flex.css">
+         <title>YOUR VACATION</title>
+     </head>
+     <body>
+         <div class="form-container">
+             <h3>YOUR VACATION</h3>
+             <form id="validat" >
+                 <div class="form-group">
+                     <label for="NAME">Name</label>
+                     <input type="text" id="NAME" name="NAME">
+                     <span class="error" id="NAME_error"></span> <!-- Unique ID -->
+                 </div>
+     
+                 <div class="form-group">
+                     <label for="date_of_birth">Date Of Birth</label>
+                     <input type="date" id="date_of_birth" name="date_of_birth">
+                     <span class="error" id="dob_error"></span> <!-- Unique ID -->
+                 </div>
+     
+                 <div class="form-group">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" name="email">
+                     <span class="error" id="email_error"></span> <!-- Unique ID -->
+                 </div>
+     
+                 <div class="form-group">
+                     <label for="password">Password</label>
+                     <input type="password" id="password" name="password">
+                     <span class="error" id="password_error"></span> <!-- Unique ID -->
+                 </div>
+     
+                 <div class="form-group">
+                     <label for="check_password">Check Password</label>
+                     <input type="password" id="check_password" name="check_password">
+                     <span class="error" id="check_password_error"></span> <!-- Unique ID -->
+                 </div>
+     
+                 <div class="form-group">
+                     <label>Food Preference</label>
+                     <div class="options">
+                         <label>
+                             <input type="radio" id="vegetarian" name="food_pref" value="vegetarian">
+                             Vegetarian
+                         </label>
+                         <label>
+                             <input type="radio" id="non_vegetarian" name="food_pref" value="non_vegetarian">
+                             Non-vegetarian
+                         </label>
+                     </div>
+                 </div>
+     
+                 <div class="form-group">
+                     <label>Drink Preference</label>
+                     <div class="options">
+                         <label>
+                             <input type="checkbox" id="tea" name="drink_pref" value="tea">
+                             Tea
+                         </label>
+                         <label>
+                             <input type="checkbox" id="coffee" name="drink_pref" value="coffee">
+                             Coffee
+                         </label>
+                         <label>
+                             <input type="checkbox" id="milk" name="drink_pref" value="milk">
+                             Milk
+                         </label>
+                         <label>
+                             <input type="checkbox" id="hot_coco" name="drink_pref" value="hot_coco">
+                             Hot Coco
+                         </label>
+                         <span class="error" id="drink_pref_error"></span> <!-- Unique ID -->
+                     </div>
+                 </div>
+                 <div class="form-group">
+                     <button name = "ubmitButton" type="submit" id="submitButton">Submit</button>
+                 </div>
+             </form>
+             <script src="validate__clientside.js"></script>
+         </div>
+     </body>
+     </html>
+     
